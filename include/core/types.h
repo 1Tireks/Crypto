@@ -11,8 +11,8 @@ namespace crypto {
     using PermutationTable = std::vector<size_t>;
 
     enum class BitIndexing { // правила индексирования битов
-        big_endian,
-        little_endian
+        LSB_to_MSB,
+        MSB_to_LSB
     };
 
     enum class StartBit { // стартовы бит
